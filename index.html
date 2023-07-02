@@ -1,0 +1,70 @@
+<!doctype HTML>
+<html>
+<script src="js/aframe.min.js"></script>
+<script src="js/aframe-ar.js"></script>
+<body style="margin: 0px; overflow: hidden;">
+
+<a-scene embedded vr-mode-ui="enabled: false;" arjs="debugUIEnabled: false;">
+
+    <a-assets>
+        <a-asset-item id="model1" src="models/model1.gltf"></a-asset-item>
+        <a-asset-item id="model2" src="models/model2.gltf"></a-asset-item>
+        <a-asset-item id="model3" src="models/model3.gltf"></a-asset-item>
+        <a-asset-item id="model4" src="models/model4.gltf"></a-asset-item>
+        <a-asset-item id="model5" src="models/model5.gltf"></a-asset-item>
+        <a-asset-item id="model6" src="models/model6.gltf"></a-asset-item>
+    </a-assets>
+
+    <a-marker type="pattern" url="data/marker1.patt">
+        <a-entity   position="0 0 0" 
+                    rotation="0 -0.5 0"
+                    scale="0.01 0.01 0.01"
+                    gltf-model="#model1" >
+        </a-entity>
+    </a-marker>
+    
+    <a-marker type="pattern" url="data/marker2.patt">
+        <a-entity   position="0 0 0" 
+                    rotation="0 -0.5 0"
+                    scale="0.01 0.01 0.01"
+                    gltf-model="#model2" >
+        </a-entity>
+    </a-marker>
+    
+    <a-marker type="pattern" url="data/marker3.patt">
+        <a-entity   position="0 0 0" 
+                    rotation="0 -0.5 0"
+                    scale="0.01 0.01 0.01"
+                    gltf-model="#model3" >
+        </a-entity>
+    </a-marker>
+
+    <a-marker type="pattern" url="data/marker4.patt">
+        <a-entity   position="0 0 0" 
+                    rotation="0 -0.5 0"
+                    scale="0.01 0.01 0.01"
+                    gltf-model="#model4" >
+        </a-entity>
+    </a-marker>
+    
+    <a-marker type="pattern" url="data/marker5.patt">
+        <a-entity   position="0 0 0" 
+                    rotation="0 -0.5 0"
+                    scale="0.01 0.01 0.01"
+                    gltf-model="#model5" >
+        </a-entity>
+    </a-marker>
+
+    <a-marker type="pattern" url="data/marker6.patt">
+        <a-entity   position="0 0 0" 
+                    rotation="0 -0.5 0"
+                    scale="0.01 0.01 0.01"
+                    gltf-model="#model6" >
+        </a-entity>
+    </a-marker>
+    
+    <a-entity camera></a-entity>
+    
+</a-scene>
+</body>
+</html>
